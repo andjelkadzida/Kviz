@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_multiplechoicequiz" default="compile.module.multiplechoicequiz">
+  <dirname property="module.multiplechoicequiz.basedir" file="${ant.file.module_multiplechoicequiz}"/>
+  
+  <property name="module.jdk.home.multiplechoicequiz" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.multiplechoicequiz" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.multiplechoicequiz" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.multiplechoicequiz" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="multiplechoicequiz.output.dir" value="${module.multiplechoicequiz.basedir}/build/classes/production/Multiplechoicequiz"/>
+  <property name="multiplechoicequiz.testoutput.dir" value="${module.multiplechoicequiz.basedir}/build/classes/test/Multiplechoicequiz"/>
+  
+  <path id="multiplechoicequiz.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="multiplechoicequiz.module.production.classpath">
+    <path refid="${module.jdk.classpath.multiplechoicequiz}"/>
+  </path>
+  
+  <path id="multiplechoicequiz.runtime.production.module.classpath">
+    <pathelement location="${multiplechoicequiz.output.dir}"/>
+  </path>
+  
+  <path id="multiplechoicequiz.module.classpath">
+    <path refid="${module.jdk.classpath.multiplechoicequiz}"/>
+    <pathelement location="${multiplechoicequiz.output.dir}"/>
+  </path>
+  
+  <path id="multiplechoicequiz.runtime.module.classpath">
+    <pathelement location="${multiplechoicequiz.testoutput.dir}"/>
+    <pathelement location="${multiplechoicequiz.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.multiplechoicequiz">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.multiplechoicequiz">
+    <patternset refid="excluded.from.module.multiplechoicequiz"/>
+  </patternset>
+  
+  
+  <target name="compile.module.multiplechoicequiz" depends="compile.module.multiplechoicequiz.production,compile.module.multiplechoicequiz.tests" description="Compile module Multiplechoicequiz"/>
+  
+  <target name="compile.module.multiplechoicequiz.production" depends="register.custom.compilers" description="Compile module Multiplechoicequiz; production classes"/>
+  
+  <target name="compile.module.multiplechoicequiz.tests" depends="register.custom.compilers,compile.module.multiplechoicequiz.production" description="compile module Multiplechoicequiz; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.multiplechoicequiz" description="cleanup module">
+    <delete dir="${multiplechoicequiz.output.dir}"/>
+    <delete dir="${multiplechoicequiz.testoutput.dir}"/>
+  </target>
+</project>

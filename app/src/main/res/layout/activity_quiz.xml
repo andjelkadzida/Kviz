@@ -14,7 +14,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/button"
         android:id="@+id/answer"
         android:background="#b8e2ca"
         android:textColor="#292929"
@@ -22,11 +22,12 @@
         android:layout_above="@+id/answer2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:fontFamily="sans-serif-condensed"/>
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="chooseAnswer"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button2"
+        android:text="@string/button2"
         android:id="@+id/answer2"
         android:background="#b8e2ca"
         android:textColor="#292929"
@@ -34,11 +35,12 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_above="@+id/answer3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="chooseAnswer"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button3"
+        android:text="@string/button3"
         android:id="@+id/answer3"
         android:background="#b8e2ca"
         android:textColor="#292929"
@@ -46,18 +48,20 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_above="@+id/answer4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="chooseAnswer"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button4"
+        android:text="@string/button4"
         android:id="@+id/answer4"
         android:background="#b8e2ca"
         android:textColor="#292929"
         android:fontFamily="sans-serif-condensed"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="chooseAnswer"/>
 
     <TextView
         android:id="@+id/score"
@@ -68,11 +72,11 @@
         android:layout_alignParentTop="true"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/score"
         android:textColor="#292929"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        />
     <TextView
-        android:text="question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/question"

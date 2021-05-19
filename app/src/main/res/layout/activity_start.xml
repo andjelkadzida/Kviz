@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,14 +18,14 @@
         android:textColor="#292929"
         android:onClick="startQuiz"/>
 
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView
         android:id="@+id/BannerAd"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:layout_height="wrap_content"
         android:layout_below="@id/startQuiz"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/browser_actions_context_menu_min_padding"
         android:visibility="visible"
-        ads:adUnitId="@string/smart_banner_ad_unit_id"
-        ads:adSize="420x300"/>
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="@string/smart_banner_ad_unit_id" />
 </RelativeLayout>

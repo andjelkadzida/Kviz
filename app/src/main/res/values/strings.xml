@@ -3,4 +3,10 @@
     <string name="start">Startuj kviz</string>
     <string name="smart_banner_ad_unit_id">ca-app-pub-3195045718391117/1739532785</string>
     <string name="banner_ad_unit_id">ca-app-pub-3195045718391117/4988499739</string>
+    <string name="button">Opcija 1</string>
+    <string name="button2">Opcija 2</string>
+    <string name="button3">Opcija 3</string>
+    <string name="button4">Opcija 4</string>
+    <string name="score">Rezultat</string>
+    <string name="question">Pitanje</string>
 </resources>

@@ -408,7 +408,7 @@ public class Questions {
             "Ko je prvi otkrio elektromagnetizam?",
             "Kako su vezani električni uređaji u domaćinstvu u električnom kolu?",
             "Koje je sveto drvo boga Peruna?",
-            "Kako se zvao sveti bik Starih Egipana?",
+            "Kako se zvao sveti bik Starih Egipćana?",
             "Koje dužine je bio Titanik?",
             "Ko je dobitnik Nobelove nagrade za književnost za 2012. godinu?",
             "Kako se naziva obezvređivanje novca koje se ogleda u padu kupovne moći novca?",

@@ -84,8 +84,7 @@
         android:layout_alignParentStart="true"
         android:layout_above="@+id/answer" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/AdView"
         android:layout_width="395dp"
         android:layout_height="64dp"
@@ -94,7 +93,7 @@
         android:layout_marginBottom="12dp"
         android:visibility="visible"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="@string/banner_ad_unit_id" />
 
 
     <ImageButton

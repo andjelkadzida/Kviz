@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <Button
+        android:id="@+id/startQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#b8e2ca"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/start"
+        android:textColor="#292929"
+        android:onClick="startQuiz"/>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/BannerAd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@id/startQuiz"
+        android:layout_marginTop="30dp"
+        android:visibility="visible"
+        ads:adUnitId="@string/smart_banner_ad_unit_id"
+        ads:adSize="420x300"/>
+</RelativeLayout>

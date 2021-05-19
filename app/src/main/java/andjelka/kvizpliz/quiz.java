@@ -1,11 +1,10 @@
 package andjelka.kvizpliz;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.net.Uri;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,13 +12,18 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.Random;
 
-public class quiz extends AppCompatActivity {
+public class quiz extends AppCompatActivity
+{
 
     AdView AdView;
 
@@ -42,27 +46,16 @@ public class quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         //Ads
-        MobileAds.initialize(this, "ca-app-pub-3195045718391117~6515843013");
-        AdView adView= (AdView)findViewById(R.id.AdView);
-        AdRequest adRequest = new AdRequest.Builder()
-                .build();
-        adView.loadAd(adRequest);
+        AdView mAdView;
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
-
-        //Night mode
-       /*AppCompatDelegate.setDefaultNightMode(
-                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);*/
-
-        int currentNightMode = getResources().getConfiguration().uiMode
-                & Configuration.UI_MODE_NIGHT_MASK;
-        switch (currentNightMode) {
-            case Configuration.UI_MODE_NIGHT_NO:
-                // Night mode is not active, we're in day time
-            case Configuration.UI_MODE_NIGHT_YES:
-                // Night mode is active, we're at night!
-            case Configuration.UI_MODE_NIGHT_UNDEFINED:
-                // We don't know what mode we're in, assume notnight
-        }
+        mAdView = findViewById(R.id.AdView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         r = new Random();
 

@@ -854,7 +854,7 @@ public class Questions {
 
 
 
-            };
+    };
     private String mCorrectAnswers [] = {
             "Proučavanjem mačaka",
             "1918.godine",
@@ -1277,8 +1277,6 @@ public class Questions {
             "Iz Holandije",
             "Čast",
             "Mikelanđelo"
-
-
     };
 
 

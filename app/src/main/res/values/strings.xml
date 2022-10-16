@@ -7,7 +7,17 @@
     <string name="button2">Opcija 2</string>
     <string name="button3">Opcija 3</string>
     <string name="button4">Opcija 4</string>
-    <string name="score">Rezultat</string>
     <string name="question">Pitanje</string>
-    <string name="login">Login</string>
+    <string name="highestScore">Najbolji rezultat: %1$d</string>
+    <string name="yourScore">Vaš rezultat: %1$d </string>
+    <string name="newHighestScore">Novi najbolji rezultat:</string>
+    <string name="gameCompleted">Kviz je kompletiran!</string>
+    <string name="correctAnswer">Tačan odgovor :-)</string>
+    <string name="from">&#160;/ %1$d</string>
+
+    <!--AlertDialog-->
+    <string name="gameOver">IGRA JE ZAVRŠENA</string>
+    <string name="gameOverMessage">Igra je završena! Da li želite da pokušate ponovo?</string>
+    <string name="end">KRAJ</string>
+    <string name="tryAgain">POKUŠAJ PONOVO</string>
 </resources>

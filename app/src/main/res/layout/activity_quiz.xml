@@ -20,7 +20,6 @@
         android:textColor="#292929"
         android:layout_marginBottom="19dp"
         android:layout_above="@+id/answer2"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:fontFamily="sans-serif-condensed"
         android:onClick="chooseAnswer"/>
@@ -34,7 +33,6 @@
         android:layout_marginBottom="23dp"
         android:fontFamily="sans-serif-condensed"
         android:layout_above="@+id/answer3"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="chooseAnswer"/>
     <Button
@@ -47,7 +45,6 @@
         android:layout_marginBottom="19dp"
         android:fontFamily="sans-serif-condensed"
         android:layout_above="@+id/answer4"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="chooseAnswer"/>
     <Button
@@ -59,7 +56,6 @@
         android:textColor="#292929"
         android:fontFamily="sans-serif-condensed"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="chooseAnswer"/>
 
@@ -74,8 +70,8 @@
         android:gravity="center"
         android:text="@string/score"
         android:textColor="#292929"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,7 +80,6 @@
         android:textColor="#292929"
         android:fontFamily="sans-serif-condensed"
         android:layout_below="@+id/score"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/answer" />
 
@@ -99,12 +94,11 @@
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id" />
 
-
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="55dp"
         android:layout_height="26dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:background="#b8e2ca"
         android:contentDescription="TODO"
         android:onClick="drive"

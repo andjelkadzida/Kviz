@@ -65,7 +65,6 @@ public class DbHelper extends SQLiteOpenHelper
     }
 
 
-    //Add question detail in table
     public long addInitQuestion(Question question)
     {
         SQLiteDatabase database = this.getWritableDatabase();
@@ -77,7 +76,7 @@ public class DbHelper extends SQLiteOpenHelper
         contentValues.put(CHOICE3, question.getChoice(2));
         contentValues.put(CHOICE4, question.getChoice(3));
         contentValues.put(ANSWER, question.getAnswer());
-        //unos reda
+        //Unos reda
         long insert = database.insert(tablePitanja, null, contentValues);
         return insert;
     }

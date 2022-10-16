@@ -9,4 +9,5 @@
     <string name="button4">Opcija 4</string>
     <string name="score">Rezultat</string>
     <string name="question">Pitanje</string>
+    <string name="login">Login</string>
 </resources>

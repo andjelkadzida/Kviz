@@ -3,7 +3,6 @@ package andjelka.kvizpliz;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +64,6 @@ public class quiz extends AppCompatActivity
 
         mQuestions.initQuests(getApplicationContext());
         updateQuestion();
-
         updateScore(mScore);
     }
 
@@ -76,8 +74,8 @@ public class quiz extends AppCompatActivity
         {
             mScore+=1;
             Toast.makeText(quiz.this, R.string.correctAnswer, Toast.LENGTH_SHORT).show();
-            updateScore(mScore);
             updateQuestion();
+            updateScore(mScore);
         }
         else
         {
@@ -85,10 +83,10 @@ public class quiz extends AppCompatActivity
         }
     }
 
-    public void drive(View view)
+    public void reportProblem(View view)
     {
-        Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSdEMSDCOhO7Gt0ZkNjW-XSPZGRhNfj-6JQ5UOIv6NLPv7DvSw/viewform?usp=sf_link"));
-        startActivity(browse);
+        Intent intent = new Intent(quiz.this, Report_Problem.class);
+        startActivity(intent);
     }
 
     private void updateQuestion()
@@ -113,8 +111,7 @@ public class quiz extends AppCompatActivity
     }
 
     private void updateScore(int points) {
-        String yourResult = getString(R.string.yourScore,  mScore) + getString(R.string.from, mQuestions.getLength());
-        score.setText(yourResult);
+        score.setText( getString(R.string.yourScore,  mScore));
     }
 
     private void gameOver() {

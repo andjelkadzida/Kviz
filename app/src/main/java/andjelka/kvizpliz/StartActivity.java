@@ -17,7 +17,6 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class StartActivity extends AppCompatActivity
 {
-    Button btnStartQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,13 +36,17 @@ public class StartActivity extends AppCompatActivity
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
-        btnStartQuiz = findViewById(R.id.startQuiz);
     }
 
     public void startQuiz(View view)
     {
         Intent intent = new Intent(StartActivity.this, quiz.class);
         startActivity(intent);
+    }
+
+    public void showHighscores(View view) {
+        Intent i = new Intent(StartActivity.this, HighestScoreActivity.class);
+        startActivity(i);
     }
 
 }

@@ -19,8 +19,6 @@ import java.util.List;
 public class DbHelper extends SQLiteOpenHelper
 {
 
-    DbHelper dbHelper;
-
     //Ime baze
     public static String DbName = "kvizPliz.db";
     //Verzija baze
@@ -60,7 +58,7 @@ public class DbHelper extends SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
         //Brisi tabelu ako postoji
-        db.execSQL("DROP TABLE IF EXISTS" + createTableQuestion);
+        db.execSQL("DROP TABLE IF EXISTS '" + createTableQuestion + "'");
         onCreate(db);
     }
 

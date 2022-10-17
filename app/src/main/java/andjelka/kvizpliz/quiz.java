@@ -105,7 +105,7 @@ public class quiz extends AppCompatActivity
         {
             Toast.makeText(quiz.this, R.string.gameCompleted, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(quiz.this, HighestScoreActivity.class);
-            intent.putExtra("rezultat", mScore);
+            intent.putExtra("score", mScore);
             startActivity(intent);
         }
     }
@@ -134,7 +134,6 @@ public class quiz extends AppCompatActivity
                                 score.setText(getString(R.string.yourScore, mScore));
                             }
                         });
-
         // Show the AlertDialog.
         AlertDialog alertDialog = alertDialogBuilder.show();
 

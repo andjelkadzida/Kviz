@@ -20,22 +20,22 @@ public class HighestScoreActivity extends AppCompatActivity {
 
         //Preuzimanje rezultata iz prethodne aktivnosti
         Intent intent = getIntent();
-        int mCurrentScore = intent.getIntExtra("rezulat", 0);
+        int mCurrentScore = intent.getIntExtra("score", 0);
 
         //Prikaz trenutnog rezultata
-        currentScore.setText(R.string.yourScore + mCurrentScore);
+        currentScore.setText(getString(R.string.yourScore,  mCurrentScore));
 
         //SharedPreferences, key-value data
         SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
-        int mHighestScore = sharedPreferences.getInt("najboljiRezultat", 0);
+        int mHighestScore = sharedPreferences.getInt("highscore", 0);
         if(mHighestScore >= mCurrentScore) {
-            highestScore.setText(R.string.highestScore + mHighestScore);
+            highestScore.setText(getString(R.string.highestScore, mHighestScore));
         }
         else {
-            highestScore.setText(R.string.newHighestScore + mCurrentScore);
+            highestScore.setText(getString(R.string.newHighestScore, mCurrentScore));
             //Upisivanje novog najboljeg rezultata
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putInt("najboljiRezultat", mCurrentScore);
+            editor.putInt("highscore", mCurrentScore);
             editor.apply();
         }
     }

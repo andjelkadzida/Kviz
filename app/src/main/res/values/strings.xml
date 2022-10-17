@@ -10,7 +10,7 @@
     <string name="question">Pitanje</string>
     <string name="highestScore">Najbolji rezultat: %1$d</string>
     <string name="yourScore">Vaš rezultat: %1$d </string>
-    <string name="newHighestScore">Novi najbolji rezultat:</string>
+    <string name="newHighestScore">Novi najbolji rezultat: %1$d</string>
     <string name="gameCompleted">Kviz je kompletiran!</string>
     <string name="correctAnswer">Tačan odgovor :-)</string>
     <string name="from">&#160;/ %1$d</string>

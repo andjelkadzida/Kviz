@@ -28,11 +28,24 @@
         android:textColor="#292929"
         android:onClick="startQuiz"/>
 
+    <Button
+        android:id="@+id/bestResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startQuiz"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:background="#b8e2ca"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="showHighscores"
+        android:text="@string/bestResults"
+        android:textColor="#292929" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/BannerAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/startQuiz"
+        android:layout_below="@id/bestResults"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/browser_actions_context_menu_min_padding"
         android:visibility="visible"

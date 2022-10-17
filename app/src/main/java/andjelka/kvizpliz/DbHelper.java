@@ -75,8 +75,7 @@ public class DbHelper extends SQLiteOpenHelper
         contentValues.put(CHOICE4, question.getChoice(3));
         contentValues.put(ANSWER, question.getAnswer());
         //Unos reda
-        long insert = database.insert(tablePitanja, null, contentValues);
-        return insert;
+        return database.insert(tablePitanja, null, contentValues);
     }
 
     //Uzimanje svih podataka iz tabele i pakovanje u ArrayList tipa Question

@@ -14,10 +14,27 @@
     <string name="gameCompleted">Kviz je kompletiran!</string>
     <string name="correctAnswer">Tačan odgovor :-)</string>
     <string name="from">&#160;/ %1$d</string>
+    <string name="bestResults">Najbolji rezultati</string>
 
     <!--AlertDialog-->
     <string name="gameOver">IGRA JE ZAVRŠENA</string>
     <string name="gameOverMessage">Igra je završena! Da li želite da pokušate ponovo?</string>
     <string name="end">KRAJ</string>
     <string name="tryAgain">POKUŠAJ PONOVO</string>
+
+    <!--Problem Report-->
+    <string name="reportWhat">Šta želite da prijavite?</string>
+    <string name="reportDescription">Unesite opis problema</string>
+    <string name="reportForm">Ukoliko ste uočili grešku u aplikaciji ili imate neki predlog, to možete prijaviti popunjavanjem forme ispod.</string>
+    <string name="kontakt">E-mail</string>
+    <string name="bug">Bug u aplikaciji</string>
+    <string name="questionError">Grešku u pitanju</string>
+    <string name="suggestion">Imam predlog</string>
+    <string name="other">Drugo</string>
+    <string name="sendReport">Pošaljite prijavu</string>
+
+    <!-- AlertDialog Problem Report -->
+    <string name="errorTitle">Greška</string>
+    <string name="errorMessage">Molimo proverite da li ste popunili sva polja!</string>
+    <string name="OK">OK</string>
 </resources>

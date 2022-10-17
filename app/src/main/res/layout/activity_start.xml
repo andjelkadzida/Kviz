@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f8fcfb"
     tools:context=".StartActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/startQuiz"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="157dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_banner_foreground" />
 
     <Button
         android:id="@+id/startQuiz"

@@ -21,6 +21,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".Report_Problem"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".StartActivity"
             android:exported="true">
             <intent-filter>
@@ -32,8 +39,7 @@
         <activity
             android:name=".quiz"
             android:exported="false"
-            android:screenOrientation="fullSensor">
-        </activity>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".HighestScoreActivity"
             android:exported="false">
@@ -41,6 +47,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3195045718391117~6515843013" />

@@ -415,7 +415,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Šta je dženaza?", new String[] {"Sahrana", "Svadba", "Bolest", "Grad"}, "Sahrana"));
             dbHelper.addInitQuestion(new Question("Kako se zvala rimska boginja zemljoradnje?", new String[] {"Minerva", "Vesta", "Justicija", "Prozerpina"}, "Prozerpina"));
             dbHelper.addInitQuestion(new Question("Koje je bilo svetovno ime Dositeja Obradovića?", new String[] {"Danilo", "Dušan", "Dimitrije", "David"}, "Dimitrije"));
-            dbHelper.addInitQuestion(new Question("Ko je napisao knjigu 'Psihopatologija svakodnevnog života'?", new String[] {"Carl Gustav Jung", "Erich Fromm", "Friedrich Nietzsche", "Sigismund Freud"}, "Sigismund Freud"));
+            dbHelper.addInitQuestion(new Question("Ko je napisao knjigu 'Psihopatologija svakodnevnog života'?", new String[] {"Carl Gustav Jung", "Erich Fromm", "Friedrich Nietzsche", "Sigmund Freud"}, "Sigmund Freud"));
             dbHelper.addInitQuestion(new Question("Kako se naziva mehanizam koji omogućava biljci da rastvorene hranljive materije iz zemlje dovede do lista?", new String[] {"Fotosinteza", "Osmoza", "Fitokineza", "Fitoliza"}, "Osmoza"));
             dbHelper.addInitQuestion(new Question("Kako se ranije zvao Zimbabve?", new String[] {"Rodezija", "Dahomej", "Zair", "Gornja Volta"}, "Rodezija"));
             dbHelper.addInitQuestion(new Question("Kako se zove glumica koja tumači glavnu ulogu u filmu 'Resident Evil'?", new String[] {"Anica Dobra", "Audrey Hepburn", "Kate Beckett", "Milla Jovovich"}, "Milla Jovovich"));

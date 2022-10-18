@@ -99,7 +99,7 @@
         android:layout_height="26dp"
         android:layout_alignParentEnd="true"
         android:background="#b8e2ca"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/reportProblem"
         android:onClick="reportProblem"
         android:visibility="visible"
         android:src="@android:drawable/stat_notify_error" />

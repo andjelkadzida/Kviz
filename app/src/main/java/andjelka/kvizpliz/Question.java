@@ -6,12 +6,10 @@ public class Question
     private String [] choice = new String[4];
     private String answer;
 
-    //Podrazumevani konstruktor
     public Question()
     {
     }
 
-    //Parametarizovani konstruktor
     public Question(String question, String[] choices, String answer)
     {
         this.question = question;
@@ -21,8 +19,6 @@ public class Question
         this.choice[3] = choices[3];
         this.answer = answer;
     }
-
-    //Getteri i setteri
 
     public String getQuestion()
     {

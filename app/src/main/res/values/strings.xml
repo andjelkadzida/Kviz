@@ -31,9 +31,12 @@
     <string name="suggestion">Imam predlog</string>
     <string name="other">Drugo</string>
     <string name="sendReport">Pošaljite prijavu</string>
+    <string name="reportProblem">Prijavite problem</string>
 
     <!-- AlertDialog Problem Report -->
     <string name="errorTitle">Greška</string>
     <string name="errorMessage">Molimo proverite da li ste popunili sva polja!</string>
     <string name="OK">OK</string>
+
+    <string name="logo">Logo aplikacije Kviz, pliz!</string>
 </resources>

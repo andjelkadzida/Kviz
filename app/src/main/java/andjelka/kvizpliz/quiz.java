@@ -1,7 +1,6 @@
 package andjelka.kvizpliz;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -145,19 +144,12 @@ public class quiz extends AppCompatActivity
                         .setCancelable(false)
                         .setTitle(R.string.gameOver)
                         .setMessage(R.string.gameOverMessage)
-                        .setNegativeButton(R.string.end, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-                                finish();
-                            }
-                        })
-                        .setPositiveButton(R.string.tryAgain, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-                                mQuestions.initQuests(getApplicationContext());
-                                mScore = 0;
-                                score.setText(getString(R.string.yourScore, mScore));
-                            }
+                        .setNegativeButton(R.string.end, (dialog, i) -> finish())
+                        .setPositiveButton(R.string.tryAgain, (dialog, i) -> {
+                            updateQuestion();
+                            mQuestions.initQuests(getApplicationContext());
+                            mScore = 0;
+                            score.setText(getString(R.string.yourScore, mScore));
                         });
         // Show the AlertDialog.
         AlertDialog alertDialog = alertDialogBuilder.show();

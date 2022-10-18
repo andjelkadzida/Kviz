@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     android:background="#f8fcfb"
     tools:context=".Report_Problem"
     android:id="@+id/problemReportLayout">
@@ -108,6 +111,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:inputType="textEmailAddress"
                 android:hint="@string/kontakt"
+                android:autofillHints="emailAddress"
                 android:textColorHint="#BCBFC3"
                 android:textAlignment="center"
                 android:textSize="16sp"
@@ -129,8 +133,7 @@
                 android:textColor="#292929"
                 android:background="#b8e2ca"
                 android:drawableEnd="@drawable/ic_send"
-                android:text="@string/sendReport"
-                android:onClick="SendReport"/>
+                android:text="@string/sendReport" />
 
         </RelativeLayout>
     </ScrollView>

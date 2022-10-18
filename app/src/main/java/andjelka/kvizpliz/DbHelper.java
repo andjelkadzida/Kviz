@@ -19,8 +19,6 @@ import java.util.List;
 public class DbHelper extends SQLiteOpenHelper
 {
 
-    DbHelper dbHelper;
-
     //Ime baze
     public static String DbName = "kvizPliz.db";
     //Verzija baze
@@ -60,7 +58,7 @@ public class DbHelper extends SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
         //Brisi tabelu ako postoji
-        db.execSQL("DROP TABLE IF EXISTS" + createTableQuestion);
+        db.execSQL("DROP TABLE IF EXISTS '" + createTableQuestion + "'");
         onCreate(db);
     }
 
@@ -77,8 +75,7 @@ public class DbHelper extends SQLiteOpenHelper
         contentValues.put(CHOICE4, question.getChoice(3));
         contentValues.put(ANSWER, question.getAnswer());
         //Unos reda
-        long insert = database.insert(tablePitanja, null, contentValues);
-        return insert;
+        return database.insert(tablePitanja, null, contentValues);
     }
 
     //Uzimanje svih podataka iz tabele i pakovanje u ArrayList tipa Question

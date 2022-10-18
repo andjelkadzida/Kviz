@@ -1,9 +1,10 @@
 package andjelka.kvizpliz;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,14 +34,22 @@ public class quiz extends AppCompatActivity
 
     private Questions mQuestions = new Questions();
 
+    SharedPreferences sharedPreferences;
+
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionsNumber = 0;
+
+    //sharedPrefereneces
+    private static final String PREF_NAME = "MyResults";
+    private static final String SCORE = "score";
+    private static final String HIGHSCORE = "highscore";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        sharedPreferences = getSharedPreferences(PREF_NAME, 0);
 
         //Ads
         AdView mAdView;
@@ -65,7 +74,6 @@ public class quiz extends AppCompatActivity
 
         mQuestions.initQuests(getApplicationContext());
         updateQuestion();
-
         updateScore(mScore);
     }
 
@@ -76,8 +84,8 @@ public class quiz extends AppCompatActivity
         {
             mScore+=1;
             Toast.makeText(quiz.this, R.string.correctAnswer, Toast.LENGTH_SHORT).show();
-            updateScore(mScore);
             updateQuestion();
+            updateScore(mScore);
         }
         else
         {
@@ -85,10 +93,10 @@ public class quiz extends AppCompatActivity
         }
     }
 
-    public void drive(View view)
+    public void reportProblem(View view)
     {
-        Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSdEMSDCOhO7Gt0ZkNjW-XSPZGRhNfj-6JQ5UOIv6NLPv7DvSw/viewform?usp=sf_link"));
-        startActivity(browse);
+        Intent intent = new Intent(quiz.this, Report_Problem.class);
+        startActivity(intent);
     }
 
     private void updateQuestion()
@@ -106,18 +114,32 @@ public class quiz extends AppCompatActivity
         else
         {
             Toast.makeText(quiz.this, R.string.gameCompleted, Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(quiz.this, HighestScoreActivity.class);
-            intent.putExtra("rezultat", mScore);
-            startActivity(intent);
+            updateHighscore();
+            //Pokretanje aktivnosti sa najboljim rezultatima
+            Intent i = new Intent(quiz.this, HighestScoreActivity.class);
+            startActivity(i);
         }
     }
 
     private void updateScore(int points) {
-        String yourResult = getString(R.string.yourScore,  mScore) + getString(R.string.from, mQuestions.getLength());
-        score.setText(yourResult);
+        score.setText( getString(R.string.yourScore,  mScore));
+    }
+
+    private void updateHighscore() {
+        int mCurrentScore = mScore;
+        int mHighestScore = this.sharedPreferences.getInt(HIGHSCORE, 0);
+        SharedPreferences.Editor editor;
+        editor = sharedPreferences.edit();
+        if(mCurrentScore >= mHighestScore) {
+            //Upisivanje novog najboljeg rezultata
+            editor.putInt(HIGHSCORE, mCurrentScore);
+        }
+        editor.putInt(SCORE, mCurrentScore);
+        editor.apply();
     }
 
     private void gameOver() {
+        updateHighscore();
         AlertDialog.Builder alertDialogBuilder =
                 new AlertDialog.Builder(this)
                         .setCancelable(false)
@@ -137,9 +159,7 @@ public class quiz extends AppCompatActivity
                                 score.setText(getString(R.string.yourScore, mScore));
                             }
                         });
-
         // Show the AlertDialog.
         AlertDialog alertDialog = alertDialogBuilder.show();
-
     }
 }

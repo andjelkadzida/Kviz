@@ -18,7 +18,7 @@
         android:layout_centerVertical="true"
         android:layout_marginBottom="157dp"
         android:scaleType="fitCenter"
-        android:src="@mipmap/ic_banner_foreground"
+        android:src="@mipmap/ic_banner_quiz"
         android:contentDescription="@string/logo"/>
 
     <Button

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_highest_score"
+<RelativeLayout android:id="@+id/activity_highest_score"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +9,8 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:background="#b8e2ca"
-    tools:context=".HighestScoreActivity">
+    tools:context=".HighestScoreActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/currentScore"
@@ -45,5 +45,16 @@
         android:textColor="#292929"
         android:textSize="20sp"
         android:text="@string/highestScore" />
-    
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAboveScores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/currentScore"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/browser_actions_context_menu_min_padding"
+        android:visibility="visible"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/bannerInHighScores" />
+
 </RelativeLayout>

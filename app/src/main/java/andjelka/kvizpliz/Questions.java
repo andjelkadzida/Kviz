@@ -298,7 +298,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Šta je Natalijina Ramonda?", new String[] {"Simbol velikog neprijatelja", "Šareni vez na donjem rubu damske haljine u 19. veku", "Prsluk koji mlada nosi prve bračne noći", "Cvet feniksa - simbol dana primirja u Prvom svetskom ratu"}, "Cvet feniksa - simbol dana primirja u Prvom svetskom ratu"));
             dbHelper.addInitQuestion(new Question("Ko je otkrio Lepenski vir?", new String[] {"Dragoslav Srejović", "Milorad M. Vasić", "Willard Libby", "John Aubrey"}, "Dragoslav Srejović"));
             dbHelper.addInitQuestion(new Question("Koje godine se odigrala bitka kod Tanenberga?", new String[] {"1815.", "1878.", "1914.", "1943."}, "1914."));
-            dbHelper.addInitQuestion(new Question("Paul Klee se proslavio kao?", new String[] {"Medicini", "Slikarstvu", "Pisanju", "Muzici"}, "Slikarstvu"));
+            dbHelper.addInitQuestion(new Question("Paul Klee se proslavio kao?", new String[] {"Doktor", "Slikar", "Pisac", "Kompozitor"}, "Slikar"));
             dbHelper.addInitQuestion(new Question("Kom slivu pripada reka Drina?", new String[] {"Crnomorskom", "Egejskom", "Severnomorkom", "Jadranskom"}, "Crnomorskom"));
             dbHelper.addInitQuestion(new Question("'Brankovo kolo' je dobilo ime po pesniku Branku:", new String[] {"Rakiću", "Iliću", "Antiću", "Radičeviću"}, "Radičeviću"));
             dbHelper.addInitQuestion(new Question("Ko je napisao pripovetku 'Sve će to narod pozlatiti'?", new String[] {"Vladislav Petković Dis", "Branislav Nušić", "Laza Lazarević", "Ivo Andrić"}, "Laza Lazarević"));

@@ -473,7 +473,11 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Kako se naziva duž koja spaja dve tačke na kružnici?", new String[] {"Euklida", "Tetiva", "Direktrisa", "Tangenta"}, "Tetiva"));
             dbHelper.addInitQuestion(new Question("Hologram je?", new String[] {"Astronomska mapa", "Šifrovana poruka", "Trodimenzionalna slika", "Štampano platno"}, "Trodimenzionalna slika"));
             dbHelper.addInitQuestion(new Question("Ko glumi Daenerys Targaryen u seriji 'Igra prestola'?", new String[] {"Julia Roberts", "Lena Headey", "Sandra Bullock", "Emilia Clarke"}, "Emilia Clarke"));
-
+            dbHelper.addInitQuestion(new Question("Koga je ubio Jack Ruby?", new String[] {"Džona Kenedija", "Li Harvi Osvalda", "Džona Lenona", "Marka Čepmena"},"Li Harvi Osvalda"));
+            dbHelper.addInitQuestion(new Question("Koji grad Nemci nazivaju Lajbah?", new String[] {"Budimpeštu", "Zagreb", "Skopje", "Ljubljanu"}, "Ljubljanu"));
+            dbHelper.addInitQuestion(new Question("Gde je nastala Gotika?", new String[] {"U Italiji", "U Francuskoj", "U Nemačkoj", "U Engleskoj"}, "U Francuskoj"));
+            dbHelper.addInitQuestion(new Question("U kom veku je otvoren muzej Luvr?", new String[] {"XX", "XIX", "XVIII", "XVII"}, "XVIII"));
+            dbHelper.addInitQuestion(new Question("Koje godine je srpska vojska došla na Solunski front?", new String[] {"1915.", "1916.", "1917.", "1918."}, "1916."));
             list = dbHelper.getAllQuestions();
         }
 

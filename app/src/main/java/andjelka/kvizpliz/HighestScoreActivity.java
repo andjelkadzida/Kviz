@@ -29,10 +29,7 @@ public class HighestScoreActivity extends AppCompatActivity {
 
         //Ad
         AdView adView;
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         adView = findViewById(R.id.bannerAboveScores);

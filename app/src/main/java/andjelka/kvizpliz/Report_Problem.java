@@ -52,14 +52,14 @@ public class Report_Problem extends AppCompatActivity {
                     intent.putExtra(Intent.EXTRA_TEXT, problemDescription.getText().toString());
                 }
                 else {
-                    intent.putExtra(Intent.EXTRA_TEXT, problemDescription.getText().toString() + " \nKontakt: " + contact.getText().toString());
+                    intent.putExtra(Intent.EXTRA_TEXT, problemDescription.getText().toString() + " \n" + getResources().getString(R.string.contact) + contact.getText().toString());
                 }
                 try {
-                    startActivity(Intent.createChooser(intent, "Pošalji..."));
+                    startActivity(Intent.createChooser(intent, getResources().getString(R.string.send)));
                 }
                 catch (Exception ex)
                 {
-                        Snackbar.make(view, "Nemate instaliranu ni jednu aplikaciju za slanje e-maila.", Snackbar.LENGTH_SHORT).setAction("INSTALIRAJTE SADA", v1 -> {
+                        Snackbar.make(view, getResources().getString(R.string.noEmailApp), Snackbar.LENGTH_SHORT).setAction(getResources().getString(R.string.installNow), v1 -> {
                             try
                             {
                                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.android.gm"));
@@ -67,7 +67,7 @@ public class Report_Problem extends AppCompatActivity {
                             }
                             catch (Exception exception)
                             {
-                                Toast.makeText(Report_Problem.this, "Došlo je do greške. Proverite internet konekciju!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Report_Problem.this, getResources().getString(R.string.checkConnection), Toast.LENGTH_SHORT).show();
                             }
                         }).setActionTextColor(getResources().getColor(android.R.color.holo_green_dark)).show();
                     }

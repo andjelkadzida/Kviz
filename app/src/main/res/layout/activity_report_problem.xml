@@ -93,6 +93,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textColor="#292929"
                 android:hint="@string/reportDescription"
+                android:autofillHints=""
                 android:textColorHint="#BCBFC3"
                 android:inputType="textMultiLine"
                 android:textAlignment="center"

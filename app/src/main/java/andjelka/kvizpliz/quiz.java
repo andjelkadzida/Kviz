@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 public class quiz extends AppCompatActivity
@@ -30,6 +31,8 @@ public class quiz extends AppCompatActivity
 
     SharedPreferences sharedPreferences;
 
+    private FirebaseAnalytics mFirebaseAnalytics;
+
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionsNumber = 0;
@@ -44,6 +47,9 @@ public class quiz extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         sharedPreferences = getSharedPreferences(PREF_NAME, 0);
+
+        //Analytics
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         //Ads
         AdView mAdView;
@@ -66,6 +72,9 @@ public class quiz extends AppCompatActivity
         mQuestions.initQuests(getApplicationContext());
         updateQuestion();
         updateScore(mScore);
+
+        //Analitika za prijavu problema
+        recordImageButtonClick();
     }
 
     public void chooseAnswer(View view)
@@ -145,5 +154,17 @@ public class quiz extends AppCompatActivity
                         });
         // Show the AlertDialog.
         AlertDialog alertDialog = alertDialogBuilder.show();
+    }
+
+    private void recordImageButtonClick() {
+
+        String id = "imageButton";
+        String name = "Prijavite problem";
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "report_problem");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
     }
 }

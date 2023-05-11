@@ -478,6 +478,14 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Gde je nastala Gotika?", new String[] {"U Italiji", "U Francuskoj", "U Nemačkoj", "U Engleskoj"}, "U Francuskoj"));
             dbHelper.addInitQuestion(new Question("U kom veku je otvoren muzej Luvr?", new String[] {"XX", "XIX", "XVIII", "XVII"}, "XVIII"));
             dbHelper.addInitQuestion(new Question("Koje godine je srpska vojska došla na Solunski front?", new String[] {"1915.", "1916.", "1917.", "1918."}, "1916."));
+            dbHelper.addInitQuestion(new Question("Ko je Rodion Raskoljnikov?", new String[] {"Ruski atletičar", "Junak romana 'Zločin i kazna'", "Ruski baletan", "Beloruski atletičar"}, "Junak romana 'Zločin i kazna'"));
+            dbHelper.addInitQuestion(new Question("Čang Kaj Šek je vodio veliku borbu protiv?", new String[] {"Indije", "Nepala", "Tajvana", "Komunističke partije Kine"}, "Komunističke partije Kine"));
+            dbHelper.addInitQuestion(new Question("Koji film Darka Bajića opisuje odnose između tajnih službi o bivšoj Jugoslaviji?", new String[] {"Balkanska pravila", "Bure baruta", "Hajka", "Početni udarac"}, "Balkanska pravila"));
+            dbHelper.addInitQuestion(new Question("Reč atoksičan označava da nešto nije?", new String[] {"Okruglo", "Kiselo", "Veliko", "Otrovno"}, "Otrovno"));
+            dbHelper.addInitQuestion(new Question("Kroz koji grad protiče reka Sava?", new String[] {"Valjevo", "Šabac", "Loznicu", "Požarevac"}, "Šabac"));
+            dbHelper.addInitQuestion(new Question("Iz koje zemlje je afrički pevač i gitarista Ali Farka Ture?", new String[] {"Iz Obale Slonovače", "Iz Nigerije", "Iz Senegala", "Iz Malija"}, "Iz Malija"));
+            dbHelper.addInitQuestion(new Question("Ko je režirao seriju 'Čista Hemija'?", new String[] {"Vins Giligen", " Danijel Sakhajm", "Paul Scheuring", "Tim Van Patten"}, "Vins Giligen"));
+
             list = dbHelper.getAllQuestions();
         }
 

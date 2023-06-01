@@ -7,8 +7,8 @@ android {
         minSdkVersion 19
         targetSdkVersion 33
         multiDexEnabled true
-        versionCode 36 //Nije korišćen
-        versionName '2.1' //Nije korišćen
+        versionCode 38 //Nije korišćen
+        versionName '2.3' //Nije korišćen
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,9 +27,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.gms:play-services-ads:22.0.0'
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
     implementation "com.google.android.gms:play-services-games-v2:17.0.0"
-    implementation 'com.google.firebase:firebase-analytics:21.2.2'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.6.1'

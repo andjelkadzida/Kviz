@@ -255,7 +255,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Ko glumi Damira Fazlinovića u seriji 'Lud, zbunjen, normalan'?", new String[] {"Moamer Kasumović", "Senad Bašić", "Mustafa Nadarević", "Emir Hadžihafizbegović"}, "Moamer Kasumović"));
             dbHelper.addInitQuestion(new Question("Na kom ostrvu je preminuo Napoleon Bonaparta?", new String[] {"Sveti Stefan", "Sveti Grgur", "Sveti Martin", "Sveta Jelena"}, "Sveta Jelena"));
             dbHelper.addInitQuestion(new Question("Dopunite naziv pesme Plavog orkestra. Lovac i?", new String[] {"Košuta", "Lane", "Srna", "Jelen"}, "Košuta"));
-            dbHelper.addInitQuestion(new Question("Kako se zove predsednik SAD?", new String[] {"Donald Trump", "Barack Obama", "Hillary Clinton", "Marco Rubio"}, "Donald Trump"));
+            dbHelper.addInitQuestion(new Question("Kako se zove predsednik SAD (2016. godina)?", new String[] {"Donald Trump", "Barack Obama", "Hillary Clinton", "Marco Rubio"}, "Donald Trump"));
             dbHelper.addInitQuestion(new Question("Ko se smatra ocem istorije?", new String[] {"Tukidid", "Herodot", "Amijan Parcelin", "Eunapije iz Sarda"}, "Herodot"));
             dbHelper.addInitQuestion(new Question("Koliko godina ima Julija u Šekspirovoj drami 'Romeo i Julija'?", new String[] {"13", "15", "17", "12"}, "13"));
             dbHelper.addInitQuestion(new Question("U kom manastiru na Svetoj gori se zamonašio Rastko Nemanjić?", new String[] {"Vatopedu", "Hilandaru", "Velikoj Lavri", "Sv. Panteleimonu"}, "Sv. Panteleimonu"));

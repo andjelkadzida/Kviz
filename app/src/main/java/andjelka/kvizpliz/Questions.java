@@ -320,7 +320,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Drugi deo kog filmskog serijala je poznat pod nazivom 'Drumski ratnik'?", new String[] {"Smrtonosno oružje", "Pobesneli Maks", "Terminator", "Umri muški"}, "Pobesneli Maks"));
             dbHelper.addInitQuestion(new Question("Askja, Hekla i Katla su imena islandskih?", new String[] {"Vulkana", "Planina", "Gradova", "Luka"}, "Vulkana"));
             dbHelper.addInitQuestion(new Question("Kako se zove album Dina Dvornika iz 1993. godine?", new String[] {"Kreativni nered", "Pandorina kutija", "Priroda i društvo", "Enfant terrible"}, "Priroda i društvo"));
-            dbHelper.addInitQuestion(new Question("Šta je kod Czeslawa Milosza zarobljeno, a kod Imanuela Kanta čisto i praktično?", new String[] {"Sila", "‚Energija", "Znanje", "Um"}, "Um"));
+            dbHelper.addInitQuestion(new Question("Šta je kod Czeslawa Milosza zarobljeno, a kod Imanuela Kanta čisto i praktično?", new String[] {"Sila", "Energija", "Znanje", "Um"}, "Um"));
             dbHelper.addInitQuestion(new Question("Bacil je bakterija kog oblika?", new String[] {"Kuglice", "Štapića", "Grozda", "Spirale"}, "Štapića"));
             dbHelper.addInitQuestion(new Question("Kako se zove žabac u komediji 'The Muppets'?", new String[] {"Kermit", "Ralf", "Gonzo", "Waldorf"}, "Kermit"));
             dbHelper.addInitQuestion(new Question("Sa kojom pesmom je grupa 'Novi fosili' na Evroviziji 1987. godine osvojila 4. mesto?", new String[] {"Mangup", "Željo moja", "Rock me baby", "Ja sam za ples"}, "Ja sam za ples"));

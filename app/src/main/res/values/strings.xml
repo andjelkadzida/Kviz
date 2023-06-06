@@ -13,7 +13,7 @@
     <string name="yourScore">Vaš rezultat: %d </string>
     <string name="newHighestScore">Novi najbolji rezultat: %d</string>
     <string name="gameCompleted">Kviz je kompletiran!</string>
-    <string name="correctAnswer">Tačan odgovor :-)</string>
+    <string name="correctAnswer">Tačan odgovor! &#128578;</string>
     <string name="bestResults">Najbolji rezultati</string>
 
     <!--AlertDialog-->

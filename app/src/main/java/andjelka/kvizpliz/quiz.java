@@ -159,7 +159,7 @@ public class quiz extends AppCompatActivity
     private void recordImageButtonClick() {
 
         String id = "imageButton";
-        String name = "Prijavite problem";
+        String name = getResources().getString(R.string.reportProblem);
 
         Bundle bundle = new Bundle();
         bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);

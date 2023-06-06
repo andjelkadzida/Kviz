@@ -43,7 +43,7 @@ public class Report_Problem extends AppCompatActivity {
             else {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("message/rfc822");
-                intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"andjelkadzida@gmail.com"});
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"andjelkadzida@gmail.com"});
 
                 int selectedRadioButton = radioGroup.getCheckedRadioButtonId();
                 radioButton = findViewById(selectedRadioButton);

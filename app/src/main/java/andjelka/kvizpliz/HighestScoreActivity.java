@@ -15,7 +15,7 @@ import com.google.android.gms.ads.MobileAds;
 
 public class HighestScoreActivity extends AppCompatActivity {
 
-    //sharedPrefereneces
+    //sharedPreferences
     private static final String PREF_NAME = "MyResults";
     private static final String SCORE = "score";
     private static final String HIGHSCORE = "highscore";

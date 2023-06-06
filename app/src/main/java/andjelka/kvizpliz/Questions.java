@@ -485,6 +485,13 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Kroz koji grad protiče reka Sava?", new String[] {"Valjevo", "Šabac", "Loznicu", "Požarevac"}, "Šabac"));
             dbHelper.addInitQuestion(new Question("Iz koje zemlje je afrički pevač i gitarista Ali Farka Ture?", new String[] {"Iz Obale Slonovače", "Iz Nigerije", "Iz Senegala", "Iz Malija"}, "Iz Malija"));
             dbHelper.addInitQuestion(new Question("Ko je režirao seriju 'Čista Hemija'?", new String[] {"Vins Giligen", " Danijel Sakhajm", "Paul Scheuring", "Tim Van Patten"}, "Vins Giligen"));
+            dbHelper.addInitQuestion(new Question("Kako se zvao jedan od najboljih italijanskih biciklista u brdskim etapama, a čiji je nadimak bio Gusar?", new String[] {"Paolo Betini", "Ivan Baso", "Marko Pantani", "Fabricio Maki"}, "Fabricio Maki"));
+            dbHelper.addInitQuestion(new Question("Koliko godina je imao Nebojša Glogovac kada je preminuo?", new String[] {"48", "52", "50", "46"}, "48"));
+            dbHelper.addInitQuestion(new Question("Koji je najveći grad i centar Tibeta?", new String[] {"Lamanos", "Larma", "Lasa", "Lama"}, "Lasa"));
+            dbHelper.addInitQuestion(new Question("Šta označava slovo R u reči laser?", new String[] {"Razaranje", "Redmond", "Radijaciju", "Rezistenciju"}, "Radijaciju"));
+            dbHelper.addInitQuestion(new Question("Gde žive koale?", new String[] {"U Americi", "U Aziji", "U Evropi", "U Australiji"}, "U Australiji"));
+            dbHelper.addInitQuestion(new Question("Koji od ponuđenih gradova u Hrvatskoj je najseverniji?", new String[] {"Pazin", "Čakovec", "Rijeka", "Zagreb"}, "Čakovec"));
+            dbHelper.addInitQuestion(new Question("Ko je komponovao operu 'Boris Godunov'?", new String[] {"Nikolai Rimsky-Korsakov", "Bedřich Smetana", "Pyotr Ilyich Tchaikovsky", "Modest Mussorgsky"}, "Modest Mussorgsky"));
 
             list = dbHelper.getAllQuestions();
         }

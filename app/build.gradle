@@ -7,8 +7,8 @@ android {
         minSdkVersion 19
         targetSdkVersion 33
         multiDexEnabled true
-        versionCode 38 //Nije korišćen
-        versionName '2.3' //Nije korišćen
+        versionCode 39 //Nije korišćen
+        versionName '2.4' //Nije korišćen
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

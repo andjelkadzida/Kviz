@@ -37,7 +37,7 @@
     <string name="noEmailApp">Nemate instaliranu ni jednu aplikaciju za slanje e-maila.</string>
     <string name="installNow">INSTALIRAJTE SADA</string>
     <string name="checkConnection">Došlo je do greške. Proverite internet konekciju!</string>
-    <string name="contact">Kontakt: mailto:</string>
+    <string name="contact">Kontakt: </string>
     <string name="msgSent">Vaša prijava je poslata!<br/>U slučaju potrebe, autor aplikacije će Vas kontaktirati putem maila koji ste ostavili.<br/>Hvala! &#128522;</string>
 
     <!-- AlertDialog Problem Report -->

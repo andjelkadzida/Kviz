@@ -492,6 +492,10 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Gde žive koale?", new String[] {"U Americi", "U Aziji", "U Evropi", "U Australiji"}, "U Australiji"));
             dbHelper.addInitQuestion(new Question("Koji od ponuđenih gradova u Hrvatskoj je najseverniji?", new String[] {"Pazin", "Čakovec", "Rijeka", "Zagreb"}, "Čakovec"));
             dbHelper.addInitQuestion(new Question("Ko je komponovao operu 'Boris Godunov'?", new String[] {"Nikolai Rimsky-Korsakov", "Bedřich Smetana", "Pyotr Ilyich Tchaikovsky", "Modest Mussorgsky"}, "Modest Mussorgsky"));
+            dbHelper.addInitQuestion(new Question("Koliko je potrebno Mesecu da obiđe oko Sunca?", new String[] {"Pola godine", "28 dana", "Godinu dana", "12 nedelja"}, "Godinu dana"));
+            dbHelper.addInitQuestion(new Question("'Od izvora dva prutića' peva?", new String[] {"Biljana Jevtić", "Lepa Lukić", "Snežana Đurišić", "Ana Bekuta"}, "Lepa Lukić"));
+            dbHelper.addInitQuestion(new Question("Ko ne spada u tzv. bečke klasičare?", new String[] {"Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Franz Joseph Haydn", "Ludwig van Beethoven"}, "Johann Sebastian Bach"));
+            dbHelper.addInitQuestion(new Question("Ko igra Deneris Targarijen u seriji 'Igra prestola'?", new String[] {"Emilia Clarke", "Julia Roberts", "Sandra Bullock", "Lena Headey"}, "Emilia Clarke"));
 
             list = dbHelper.getAllQuestions();
         }

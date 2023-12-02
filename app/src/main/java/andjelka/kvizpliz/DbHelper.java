@@ -14,7 +14,7 @@ public class DbHelper extends SQLiteOpenHelper
 {
 
     //Ime baze
-    public static String DbName = "kvizPliz.db";
+    public static final String DbName = "kvizPliz.db";
     //Verzija baze
     private static final int DbVersion = 1;
     //Ime tabele

@@ -56,6 +56,11 @@ public class Report_Problem extends AppCompatActivity {
                 }
                 try {
                     startActivity(Intent.createChooser(intent, getResources().getString(R.string.send)));
+
+                    //Obrisi sve posle slanja
+                    radioGroup.clearCheck();
+                    problemDescription.getText().clear();
+                    contact.getText().clear();
                 }
                 catch (Exception ex)
                 {

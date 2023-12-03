@@ -203,7 +203,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Koji je najveći trocifren broj deljiv sa 3?", new String[] {"999", "636", "969", "666"}, "999"));
             dbHelper.addInitQuestion(new Question("Koja je najmanja država na svetu?", new String[] {"Luksemburg", "Vatikan", "San Marino", "Monako"}, "Vatikan"));
             dbHelper.addInitQuestion(new Question("Koji je najviši planinski vrh u Srbiji?", new String[] {"Midžor", "Crni vrh", "Pančićev vrh", "Đeravica"}, "Đeravica"));
-            dbHelper.addInitQuestion(new Question("Kako se zove veština lepog i urednog pisanja", new String[] {"Kaligrafija", "Kriptografija", "Trafografija", "Grafoskopija"}, "Kaligrafija"));
+            dbHelper.addInitQuestion(new Question("Kako se zove veština lepog i urednog pisanja?", new String[] {"Kaligrafija", "Kriptografija", "Trafografija", "Grafoskopija"}, "Kaligrafija"));
             dbHelper.addInitQuestion(new Question("Gde se nalazi ostrvo Vido?", new String[] {"U Jadranskom moru", "U Egejskom moru", "U Jonskom moru", "U Tirenskom moru"}, "U Egejskom moru"));
             dbHelper.addInitQuestion(new Question("Prvo sedište nezavisne srpske patrijaršije je:", new String[] {"Manastir Sopoćani", "Manastir Žiča", "Pećka patrijaršija", "Manastir Studenica"}, "Manastir Žiča"));
             dbHelper.addInitQuestion(new Question("Ko je pobedio minhenski Bayern Münich u finalu fudbalske Lige Šampiona za sezonu 2012/13?", new String[] {"Borussia Dortmund", "Real Madrid", "Porto", "Barcelona"}, "Barcelona"));

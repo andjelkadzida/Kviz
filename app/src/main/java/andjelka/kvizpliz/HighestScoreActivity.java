@@ -54,8 +54,9 @@ public class HighestScoreActivity extends AppCompatActivity {
         }
     }
 
-    public void onRepeatClick(View view) {
-        Intent intent = new Intent(HighestScoreActivity.this, quiz.class);
-        startActivity(intent);
+    //Povratak na pocetnu stranicu
+    private void backToHome(View view) {
+        Intent homeIntent = new Intent(HighestScoreActivity.this, StartActivity.class);
+        startActivity(homeIntent);
     }
 }

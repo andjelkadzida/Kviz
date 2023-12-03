@@ -2,6 +2,8 @@
 <resources>
     <color name="colorPrimary">#292929</color>
     <color name="colorPrimaryDark">#292929</color>
+    <color name="elementBackground">#b8e2ca</color>
+    <color name="highestScoreBackground">#dbf0e4</color>
     <color name="colorAccent">#9eb4f5</color>
     <color name="dialogBackground">#f8fcfb</color>
 </resources>

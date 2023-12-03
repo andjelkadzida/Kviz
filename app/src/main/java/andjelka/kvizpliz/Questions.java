@@ -461,7 +461,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Koji deo teritorije Srbije nije pripadao tzv. 'Staroj Srbiji'?", new String[] {"Bosna i Hercegovina", "Sandžak", "Makedonija", "Kosovo i Metohija"}, "Bosna i Hercegovina"));
             dbHelper.addInitQuestion(new Question("Kada su u Srbiji uvedene obavezne metarske mere?", new String[] {"1850. godine", "1890. godine", "1880. godine", "1873. godine"}, "1873. godine"));
             dbHelper.addInitQuestion(new Question("Iz koje zemlje je čuveni astronom Christiaan Huygens?", new String[] {"Iz Nemačke", "Iz Holandije", "Iz Danske", "Iz Švedske"}, "Iz Holandije"));
-            dbHelper.addInitQuestion(new Question("Šta označava reč 'ALVALUK'?", new String[] {"Pijanicu", "Kolač", "Alavost", "Čast"}, "Čast"));
+            dbHelper.addInitQuestion(new Question("Šta označava reč 'alvaluk'?", new String[] {"Pijanicu", "Kolač", "Alavost", "Čast"}, "Čast"));
             dbHelper.addInitQuestion(new Question("'Mojsija' je izvajao?", new String[] {"Leonardo", "Donatelo", "Mikelanđelo", "Miron"}, "Mikelanđelo"));
             dbHelper.addInitQuestion(new Question("U kojoj disciplini je Franjo Mihalić osvojio srebrnu medalju na OI u Melburnu 1956. godine?", new String[] {"Brzom hodanju", "10.000 metara", "Višeboju", "Maratonu"}, "Maratonu"));
             dbHelper.addInitQuestion(new Question("Kada je stvorena država Albanija?", new String[] {"1801. godine", "1921. godine", "1614. godine", "1713. godine"}, "1921. godine"));

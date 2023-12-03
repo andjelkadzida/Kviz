@@ -4,7 +4,7 @@ android {
     compileSdkVersion 34
     defaultConfig {
         applicationId 'andjelka.kvizpliz'
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 34
         multiDexEnabled true
         versionCode 40 //Nije korišćen

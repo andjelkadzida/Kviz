@@ -363,7 +363,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Danilo Nikolić je poznati?", new String[] {"Glumac", "Muzičar", "Književnik", "Reditelj"}, "Književnik"));
             dbHelper.addInitQuestion(new Question("Kako se naziva verovanje u boga u racionalnom smislu, bez vezivanja za određenu religiju?", new String[] {"Budizam", "Deizam", "Ateizam", "Pluralizam"}, "Deizam"));
             dbHelper.addInitQuestion(new Question("Kada je Kraljevina Jugoslavija pristupila Trojnom paktu?", new String[] {"1941. godine", "1939. godine", "1940. godine", "1942. godine"}, "1941. godine"));
-            dbHelper.addInitQuestion(new Question("Na kom brodu je propisana kapitulacija Japana u Drugom svetskom ratu?", new String[] {"Pacifik", "Misisipi", "Atlantik", "Misuri"}, "Misuri"));
+            dbHelper.addInitQuestion(new Question("Na kom brodu je potpisana kapitulacija Japana u Drugom svetskom ratu?", new String[] {"Pacifik", "Misisipi", "Atlantik", "Misuri"}, "Misuri"));
             dbHelper.addInitQuestion(new Question("Koja od sledećih grupa ostrva se ne nalazi u Indijskom okeanu?", new String[] {"Komorska ostrva", "Sejšelska ostrva", "Kurilska ostrva", "Maldivi"}, "Kurilska ostrva"));
             dbHelper.addInitQuestion(new Question("Mesto gde je Isus razapet je?", new String[] {"Nazaret", "Vitlajem", "Golgota", "Jordan"}, "Golgota"));
             dbHelper.addInitQuestion(new Question("Drugi naziv za nevoljno drhtanje tela je?", new String[] {"Tremor", "Drhtavica", "Atrofija", "Katapleksija"}, "Tremor"));

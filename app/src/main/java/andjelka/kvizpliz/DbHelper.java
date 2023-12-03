@@ -14,9 +14,9 @@ public class DbHelper extends SQLiteOpenHelper
 {
 
     //Ime baze
-    public static String DbName = "kvizPliz.db";
+    public static final String DbName = "kvizPliz.db";
     //Verzija baze
-    private static final int DbVersion = 1;
+    private static final int DbVersion = 2;
     //Ime tabele
     private static final String tablePitanja = "Pitanja";
     //Kolone
@@ -52,8 +52,10 @@ public class DbHelper extends SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
         //Brisi tabelu ako postoji
-        db.execSQL("DROP TABLE IF EXISTS '" + createTableQuestion + "'");
-        onCreate(db);
+        if(oldVersion < newVersion) {
+            db.execSQL("DROP TABLE IF EXISTS " + tablePitanja);
+            onCreate(db);
+        }
     }
 
 

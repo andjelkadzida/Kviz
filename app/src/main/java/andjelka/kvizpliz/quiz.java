@@ -153,7 +153,7 @@ public class quiz extends AppCompatActivity
                             score.setText(getString(R.string.yourScore, mScore));
                         });
         // Show the AlertDialog.
-        AlertDialog alertDialog = alertDialogBuilder.show();
+       alertDialogBuilder.show();
     }
 
     private void recordImageButtonClick() {

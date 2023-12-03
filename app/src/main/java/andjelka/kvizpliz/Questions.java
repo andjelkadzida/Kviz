@@ -87,7 +87,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Olimpijske igre 2016. godine održane su u:", new String[] {"Londonu", "Pekingu", "Tokiju", "Rio de Žaneiru"}, "Rio de Žaneiru"));
             dbHelper.addInitQuestion(new Question("Koja zemlja je pobednik Eurosonga 2017. godine?", new String[] {"Portugalija", "Australija", "Ukrajina", "Izrael"}, "Portugalija"));
             dbHelper.addInitQuestion(new Question("Eutanazija je:", new String[] {"Ubistvo iz nehata", "Ubistvo iz milosrđa", "Ubistvo iz koristoljublja", "Ubistvo iz osvete"}, "Ubistvo iz milosrđa"));
-            dbHelper.addInitQuestion(new Question("Koliko iznosi jedan inch?", new String[] {"1,54cm", "2,44cm", "2,54cm", "2,64cm"}, "2,54cm"));
+            dbHelper.addInitQuestion(new Question("Koliko iznosi jedan inch?", new String[] {"1,54 cm", "2,44 cm", "2,54 cm", "2,64 cm"}, "2,54 cm"));
             dbHelper.addInitQuestion(new Question("U kojoj državi se nalazi najviše vulkana?", new String[] {"U Japanu", "U Indoneziji", "U Meksiku", "U Italiji"}, "U Indoneziji"));
             dbHelper.addInitQuestion(new Question("Koji bend je osnovao Jimmy Page?", new String[] {"Led Zeppelin", "Queen", "Pink Floyd", "The Beatles"}, "Led Zeppelin"));
             dbHelper.addInitQuestion(new Question("Ko je napisao delo 'Gospodar prstenova'?", new String[] {"Suzanne Collins", "J.R.R.Tolkien", "J.K.Rowling", "George R.R.Martin"}, "J.R.R.Tolkien"));
@@ -99,7 +99,7 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Koji arhitekta je stvorio urbanističku koncepciju Novog Beograda?", new String[] {"Milan Zloković", "Jan Nevole", "Nikola Dobrović", "Aleksej Brkić"}, "Nikola Dobrović"));
             dbHelper.addInitQuestion(new Question("Šta su lagumi?", new String[] {"Podzemni prolazi ili prostorije", "Poluzatvoreni nadzemni prostori", "Zatvoreni prostori na osojnim padinama", "Prostorije na prirodno osunčanim prisojnim padinama"}, "Podzemni prolazi ili prostorije"));
             dbHelper.addInitQuestion(new Question("Čime se hrani svilena buba?", new String[] {"Dudovim lišćem", "Smolom", "Lišajevima", "Larvama mrava"}, "Dudovim lišćem"));
-            dbHelper.addInitQuestion(new Question("Šta je 'bela kuga?'", new String[] {"Smanjenje nataliteta", "Smanjenje mortaliteta", "Porast nataliteta", "Porast mortaliteta"}, "Smanjenje nataliteta"));
+            dbHelper.addInitQuestion(new Question("Šta je 'bela kuga'?", new String[] {"Smanjenje nataliteta", "Smanjenje mortaliteta", "Porast nataliteta", "Porast mortaliteta"}, "Smanjenje nataliteta"));
             dbHelper.addInitQuestion(new Question("Eros i Amor su jedan drugome:", new String[] {"Osiromašenje građana", "Unikat", "Pandan", "Sinonimi"}, "Pandan"));
             dbHelper.addInitQuestion(new Question("Koja vrsta gramofonskih ploča se vrti na 33 obrtaja?", new String[] {"Ne postoji takva vrsta ploča", "Singl", "Extended play", "Long play"}, "Long play"));
             dbHelper.addInitQuestion(new Question("Prvi avion kompanije 'Air Serbia' nosi naziv:", new String[] {"Novak Đoković", "Vlade Divac", "Nikola Tesla", "Miki Manojlović"}, "Novak Đoković"));

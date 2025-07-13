@@ -11,7 +11,8 @@
     android:paddingRight="16dp"
     android:background="#f8fcfb"
     android:fitsSystemWindows="true"
-    tools:context="andjelka.kvizpliz.quiz">
+    tools:context=".quiz">
+
     <Button
         android:id="@+id/answer"
         android:layout_width="match_parent"
@@ -84,7 +85,8 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:fontFamily="sans-serif-condensed"
-        android:gravity="center" />
+        android:gravity="center"
+        android:padding="12dp"/>
 
     <TextView
         android:id="@+id/question"
@@ -111,13 +113,13 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="55dp"
-        android:layout_height="26dp"
+        android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:background="@color/elementBackground"
         android:contentDescription="@string/reportProblem"
         android:onClick="reportProblem"
         android:visibility="visible"
         android:src="@android:drawable/stat_notify_error"
-        android:scaleType="centerInside"/>
+        android:scaleType="center" />
 
 </RelativeLayout>

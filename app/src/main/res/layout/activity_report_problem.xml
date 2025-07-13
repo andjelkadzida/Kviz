@@ -24,27 +24,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:scaleType="fitCenter"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/colorPrimary"
                 android:text="@string/reportForm"
-                android:textAlignment="center"
                 android:textSize="16sp"
-                android:fontFamily="sans-serif-condensed"/>
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/whatReportView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:scaleType="fitCenter"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/problemReportView"
                 android:text="@string/reportWhat"
-                android:textAlignment="center"
                 android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
                 android:fontFamily="sans-serif-condensed"
-                android:layout_below="@id/problemReportView"/>
+                android:scaleType="fitCenter" />
 
             <RadioGroup
                 android:id="@+id/reportSelector"
@@ -52,38 +52,42 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_below="@id/whatReportView">
-                <RadioButton android:id="@+id/radioBug"
+                <RadioButton
+                    android:id="@+id/radioBug"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp"
                     android:text="@string/bug"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-condensed"
                     android:buttonTint="@color/elementBackground"/>
-                <RadioButton android:id="@+id/radioQuestionError"
+                <RadioButton
+                    android:id="@+id/radioQuestionError"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/questionError"
                     android:textSize="16sp"
                     android:textColor="@color/colorPrimary"
-                    android:buttonTint="@color/elementBackground"
-                    android:text="@string/questionError" />
-                <RadioButton android:id="@+id/radioSuggestion"
+                    android:fontFamily="sans-serif-condensed"
+                    android:buttonTint="@color/elementBackground" />
+                <RadioButton
+                    android:id="@+id/radioSuggestion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/suggestion"
                     android:textSize="16sp"
                     android:textColor="@color/colorPrimary"
-                    android:buttonTint="@color/elementBackground"
-                    android:text="@string/suggestion" />
-                <RadioButton android:id="@+id/radioOther"
+                    android:fontFamily="sans-serif-condensed"
+                    android:buttonTint="@color/elementBackground" />
+                <RadioButton
+                    android:id="@+id/radioOther"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/other"
                     android:textSize="16sp"
                     android:textColor="@color/colorPrimary"
-                    android:buttonTint="@color/elementBackground"
-                    android:text="@string/other" />
+                    android:fontFamily="sans-serif-condensed"
+                    android:buttonTint="@color/elementBackground" />
             </RadioGroup>
 
             <EditText
@@ -93,16 +97,16 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginRight="17dp"
+                android:layout_below="@id/reportSelector"
                 android:padding="4dp"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/colorPrimary"
                 android:hint="@string/reportDescription"
-                android:autofillHints=""
-                android:textColorHint="#BCBFC3"
-                android:inputType="textMultiLine"
-                android:textAlignment="center"
                 android:textSize="16sp"
-                android:layout_below="@id/reportSelector"/>
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textColorHint="#BCBFC3"
+                android:fontFamily="sans-serif-condensed"
+                android:autofillHints=""
+                android:inputType="textMultiLine" />
 
             <EditText
                 android:id="@+id/contact"
@@ -111,17 +115,17 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginRight="17dp"
-                android:drawableEnd="@drawable/ic_mail"
+                android:layout_below="@id/problemDescription"
                 android:padding="4dp"
-                android:fontFamily="sans-serif-condensed"
-                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_mail"
                 android:hint="@string/kontakt"
-                android:autofillHints="emailAddress"
-                android:textColorHint="#BCBFC3"
-                android:textAlignment="center"
                 android:textSize="16sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_below="@id/problemDescription"/>
+                android:textAlignment="center"
+                android:textColorHint="#BCBFC3"
+                android:fontFamily="sans-serif-condensed"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress" />
 
             <Button
                 android:id="@+id/btnSendReport"
@@ -130,15 +134,16 @@
                 android:layout_marginLeft="19dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="19dp"
-                android:padding="4dp"
                 android:layout_below="@id/contact"
-                android:fontFamily="sans-serif-condensed"
-                android:textSize="16sp"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
-                android:background="@color/elementBackground"
+                android:padding="4dp"
                 android:drawableEnd="@drawable/ic_send"
-                android:text="@string/sendReport" />
+                android:text="@string/sendReport"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@color/elementBackground" />
 
         </RelativeLayout>
     </ScrollView>

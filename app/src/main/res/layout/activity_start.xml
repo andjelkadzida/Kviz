@@ -9,6 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:background="#f8fcfb"
+    android:fitsSystemWindows="true"
     tools:context=".StartActivity">
 
     <ImageView
@@ -27,10 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/elementBackground"
-        android:fontFamily="sans-serif-condensed"
         android:text="@string/start"
+        android:textSize="18sp"
         android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/elementBackground"
         android:onClick="startQuiz"/>
 
     <Button
@@ -40,11 +43,13 @@
         android:layout_below="@id/startQuiz"
         android:layout_centerVertical="true"
         android:layout_marginTop="16dp"
-        android:background="@color/elementBackground"
-        android:fontFamily="sans-serif-condensed"
-        android:onClick="showHighscores"
         android:text="@string/bestResults"
-        android:textColor="#292929" />
+        android:textSize="18sp"
+        android:textColor="#292929"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/elementBackground"
+        android:onClick="showHighscores" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/BannerAd"
@@ -55,5 +60,6 @@
         android:layout_marginTop="@dimen/browser_actions_context_menu_min_padding"
         android:visibility="visible"
         ads:adSize="LARGE_BANNER"
-        ads:adUnitId="@string/smart_banner_ad_unit_id" />
+        ads:adUnitId="@string/smart_banner_ad_unit_id"
+        tools:ignore="PrivateResource" />
 </RelativeLayout>

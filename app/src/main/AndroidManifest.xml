@@ -22,6 +22,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".Report_Problem"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -38,8 +39,7 @@
         </activity>
         <activity android:hardwareAccelerated="true"
             android:name=".quiz"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
+            android:exported="false"/>
         <activity android:hardwareAccelerated="true"
             android:name=".HighestScoreActivity"
             android:exported="false">

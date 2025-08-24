@@ -18,7 +18,7 @@ public class HighestScoreActivity extends AppCompatActivity {
     //sharedPreferences
     private static final String PREF_NAME = "MyResults";
     private static final String SCORE = "score";
-    private static final String HIGHSCORE = "highscore";
+    private static final String HIGH_SCORE = "highScore";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class HighestScoreActivity extends AppCompatActivity {
         currentScore.setText(getString(R.string.yourScore,  mCurrentScore));
 
         //SharedPreferences, key-value data
-        int mHighestScore = sharedPreferences.getInt(HIGHSCORE, 0);
+        int mHighestScore = sharedPreferences.getInt(HIGH_SCORE, 0);
         if(mHighestScore >= mCurrentScore) {
             highestScore.setText(getString(R.string.highestScore, mHighestScore));
         }

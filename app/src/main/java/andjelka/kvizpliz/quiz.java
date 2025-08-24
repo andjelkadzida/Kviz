@@ -40,7 +40,7 @@ public class quiz extends AppCompatActivity
     //sharedPrefereneces
     private static final String PREF_NAME = "MyResults";
     private static final String SCORE = "score";
-    private static final String HIGHSCORE = "highscore";
+    private static final String HIGH_SCORE = "highScore";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,12 +127,12 @@ public class quiz extends AppCompatActivity
 
     private void updateHighscore() {
         int mCurrentScore = mScore;
-        int mHighestScore = this.sharedPreferences.getInt(HIGHSCORE, 0);
+        int mHighestScore = this.sharedPreferences.getInt(HIGH_SCORE, 0);
         SharedPreferences.Editor editor;
         editor = sharedPreferences.edit();
         if(mCurrentScore >= mHighestScore) {
             //Upisivanje novog najboljeg rezultata
-            editor.putInt(HIGHSCORE, mCurrentScore);
+            editor.putInt(HIGH_SCORE, mCurrentScore);
         }
         editor.putInt(SCORE, mCurrentScore);
         editor.apply();

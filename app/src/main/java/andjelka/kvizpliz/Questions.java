@@ -504,7 +504,37 @@ public class Questions
             dbHelper.addInitQuestion(new Question("Motet je?", new String[] {"Pravac u Baroku", "Forma vokalne muzike", "Muzički instrument", "Dirigentska palica"}, "Forma vokalne muzike"));
             dbHelper.addInitQuestion(new Question("Koji je nadimak strip junaka Zagora?", new String[] {"Duh koji hoda", "Duh sa testerom", "Duh iz Darkvuda", "Duh sa sekirom"}, "Duh sa sekirom"));
             dbHelper.addInitQuestion(new Question("U kom od navedenih filmova ne glumi Julia Roberts?", new String[] {"Runaway Bride", "Shine", "Mystic Pizza", "Erin Brockovich"}, "Shine"));
-
+            dbHelper.addInitQuestion(new Question("Koliko dirki ima standardni klavir?", new String[] {"102","72","88","114"}, "88"));
+            dbHelper.addInitQuestion(new Question("Koliko reči je sadržao prvi srpski rečnik Vuka Karadžića?", new String[] {"Oko 32000","Oko 27000","Oko 47000","Oko 26000"}, "Oko 27000"));
+            dbHelper.addInitQuestion(new Question("Ko je bio grči bog vina?", new String[] {"Dionis","Apolon","Hefest","Ares"}, "Dionis"));
+            dbHelper.addInitQuestion(new Question("Roman 'Pas i kontrabas' napisao je?", new String[] {"Nenad Racković","Dejan Atanacković","Vidosav Stevanović","Saša Ilić"}, "Saša Ilić"));
+            dbHelper.addInitQuestion(new Question("U kojoj zemlji se proizvode traktori IMT?", new String[] {"U Srbiji","U Belgiji","U Hrvatskoj","U Nemačkoj"}, "U Srbiji"));
+            dbHelper.addInitQuestion(new Question("Koje godine je rođena prva klonirana ovca Doli?", new String[] {"1999.","1997.","1998.","1996."}, "1996."));
+            dbHelper.addInitQuestion(new Question("Gde se održavaju konjske trke?", new String[] {"Na hipodromu","Na aerodromu","Na monodromu","Na heliodromu"}, "Na hipodromu"));
+            dbHelper.addInitQuestion(new Question("Koji je službeni jezik Surinama?", new String[]{"surinamski","holandski","engleski","španski"}, "holandski"));
+            dbHelper.addInitQuestion(new Question("Gde je sila gravitacije najveća?", new String[]{"Na polovima", "Na povratnicima", "Na Ekvadoru", "Na Bermudima"}, "Na polovima"));
+            dbHelper.addInitQuestion(new Question("Ko ne čini klavirski tri?", new String[]{"Kontrabas", "Violina", "Klavir", "Violončelo"}, "Kontrabas"));
+            dbHelper.addInitQuestion(new Question("Koliko iznosi zbir svih jednocifrenih brojeva?", new String[]{"49","53","45","55"},"45"));
+            dbHelper.addInitQuestion(new Question("Koji od navedenih gradova je najjužniji?", new String[]{"Vršac", "Pariz", "Kopenhagen", "Niš"},"Niš"));
+            dbHelper.addInitQuestion(new Question("Ko je pronalazač parne mašine?", new String[] {"Thomas Newcomen", "Isaac Newton", "Alfred Nobel", "Alessandro Volta"}, "Thomas Newcomen"));
+            dbHelper.addInitQuestion(new Question("Koliko titula je osvojio bivši vozač formule 1, Damon Hill?", new String[] {"Tri", "Dve", "Ni jednu", "Jednu"}, "Jednu"));
+            dbHelper.addInitQuestion(new Question("Koja grana medicine se bavi lečenjem tumora?", new String[] {"Otorinolaringologija", "Oftalmologija", "Onkologija", "Pulmologija"}, "Onkologija"));
+            dbHelper.addInitQuestion(new Question("Koji od ovih naroda nikada nije vladao Sicilijom?", new String[] {"Španci", "Nemci", "Normani", "Turci"}, "Turci"));
+            dbHelper.addInitQuestion(new Question("Kako glasi ime bivšeg jugoslovenskog reprezentativca Karasija?", new String[] {"Stanislav", "Ivica", "Stjepan", "Vladimir"}, "Stanislav"));
+            dbHelper.addInitQuestion(new Question("Koji od ponuđenih gradova ima najveću nadmorsku visinu?", new String[] {"Manila", "Lasa", "Kito", "Asunsion"}, "Lasa"));
+            dbHelper.addInitQuestion(new Question("Odakle je Agostino Neto, bivši pesnik i državnik?", new String[] {"Angola", "Brazil", "Portugal", "Paragvaj"}, "Angola"));
+            dbHelper.addInitQuestion(new Question("Koliko titula je osvojio bivši vozač formule 1, Damon Hill?", new String[] {"Tri", "Dve", "Ni jednu", "Jednu"}, "Jednu"));
+            dbHelper.addInitQuestion(new Question("Koji glumac ne glumi u TV seriji 'Bolji život'?", new String[] {"Miodrag Krstović", "Milan Gutović", "Bogdan Diklić", "Dragan Nikolić"}, "Bogdan Diklić"));
+            dbHelper.addInitQuestion(new Question("Ventrilokvista govori?", new String[] {"Napamet", "Učeno", "Nepovezano", "Iz stomala"}, "Iz stomaka"));
+            dbHelper.addInitQuestion(new Question("Koju životinju je najviše prikazivala Minjonska umetnost na Kritu?", new String[] {"Lava", "Bika", "Konja", "Zmiju"}, "Bika"));
+            dbHelper.addInitQuestion(new Question("Sergej Milinković Savić je?", new String[] {"Atletičar", "Košarkaš", "Teniser", "Fudbaler"}, "Fudbaler"));
+            dbHelper.addInitQuestion(new Question("Kojoj državi pripada Internet domen MK?", new String[] {"Makedoniji", "Maroku", "Monaku", "Madagaskaru"}, "Makedoniji"));
+            dbHelper.addInitQuestion(new Question("Slika prenesena elektronski, kroz katodnu cev, prvi put je viđena?", new String[] {"1941. godine", "1890. godine", "1966. godine", "1926. godine"}, "1926. godine"));
+            dbHelper.addInitQuestion(new Question("Soda-voda i sok od limuna obogaćeni aromom kinina su glavni sastojci?", new String[] {"Sakea", "Švepsa", "Apsenta", "Pelinkovca"}, "Švepsa"));
+            dbHelper.addInitQuestion(new Question("Bolidi koje ekipe u formuli 1 imaju nadimak 'Srebrne strele'?", new String[] {"Meklaren", "Lotus", "Red Bul", "Ferari"}, "Meklaren"));
+            dbHelper.addInitQuestion(new Question("Koliko je visoka najviša zgrada na svetu (do 2010. godine)?", new String[] {"1/3 milje", "1/2 milje", "3/4 milje", "1/4 milje"}, "1/2 milje"));
+            dbHelper.addInitQuestion(new Question("Koje godine je osnovan nacionalni park Šar planina?", new String[] {"2006.", "1986.", "1974.", "1960."}, "1986."));
+            dbHelper.addInitQuestion(new Question("Glavni grad Asteka je bio?", new String[] {"Tenočtitlan", "Izapa", "Pacaritambo", "Zapotek"}, "Tenočtitlan"));
             list = dbHelper.getAllQuestions();
         }
 

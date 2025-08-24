@@ -12,7 +12,8 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-    <application android:hardwareAccelerated="true"
+    <application
+        android:hardwareAccelerated="true"
         android:allowBackup="true"
         android:icon="@mipmap/appikonica"
         android:label="@string/app_name"
@@ -21,26 +22,29 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:hardwareAccelerated="true"
             android:name=".Report_Problem"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:hardwareAccelerated="true"
+        <activity
+            android:hardwareAccelerated="true"
             android:name=".StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:hardwareAccelerated="true"
+        <activity
+            android:hardwareAccelerated="true"
             android:name=".quiz"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
-        <activity android:hardwareAccelerated="true"
+            android:exported="false"/>
+        <activity
+            android:hardwareAccelerated="true"
             android:name=".HighestScoreActivity"
             android:exported="false">
             <meta-data
